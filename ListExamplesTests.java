@@ -16,7 +16,7 @@ public class ListExamplesTests {
         public void capitalTest() {
 		List<String> l1 = new ArrayList<String>(Arrays.asList("A", "b"));
 		List<String> l2 = new ArrayList<String>(Arrays.asList("C", "d"));
-		assertArrayEquals(new String[]{ "A", "C" }, ListExamples.merge(l1, l2).toArray());
+		assertArrayEquals(new String[]{ "A", "C" }, ListExamples.capital(l1, l2).toArray());
         }
 
 }
