@@ -13,10 +13,10 @@ public class ListExamplesTests {
 	}
 	
 	@Test(timeout = 500)
-        public void testMerge2() {
-		List<String> l1 = new ArrayList<String>(Arrays.asList("a", "b", "c"));
-		List<String> l2 = new ArrayList<String>(Arrays.asList("c", "d", "e"));
-		assertArrayEquals(new String[]{ "a", "b", "c", "c", "d", "e" }, ListExamples.merge(l1, l2).toArray());
+        public void capitalTest() {
+		List<String> l1 = new ArrayList<String>(Arrays.asList("A", "b"));
+		List<String> l2 = new ArrayList<String>(Arrays.asList("C", "d"));
+		assertArrayEquals(new String[]{ "A", "C" }, ListExamples.merge(l1, l2).toArray());
         }
 
 }
