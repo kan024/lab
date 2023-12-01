@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class ListExamplesTests {
 	@Test(timeout = 500)
 	public void testMerge1() {
-    		List<String> l1 = new ArrayList<String>(Arrays.asList("x", "y"));
-		List<String> l2 = new ArrayList<String>(Arrays.asList("a", "b"));
-		assertArrayEquals(new String[]{ "a", "b", "x", "y"}, ListExamples.merge(l1, l2).toArray());
+    		List<String> l1 = new ArrayList<String>(Arrays.asList("X"));
+		List<String> l2 = new ArrayList<String>(Arrays.asList("a"));
+		assertArrayEquals(new String[]{ "X"}, ListExamples.capital(l1, l2).toArray());
 	}
 	
 	@Test(timeout = 500)
