@@ -30,6 +30,11 @@ class ListExamples {
     		result.add(letter);
     	}
     }
+for(String letter2 : list2) {
+    	if (letter2.equals(letter2.toUpperCase())) {
+    		result.add(letter2);
+    	}
+    }
     return result;
   }
 
